@@ -4,3 +4,59 @@
     width: 13rem;
     margin: auto;
 }
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: #f4f6ff; /* soft background */
+    min-height: 100vh;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 22rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* input styling */
+.formStyle input {
+    padding: 0.8rem;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.formStyle input:focus {
+    border-color: #4b7bec;
+    box-shadow: 0 0 5px rgba(75, 123, 236, 0.4);
+}
+
+/* submit button */
+.formStyle input[type="submit"] {
+    background: #4b7bec;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.formStyle input[type="submit"]:hover {
+    background: #3867d6;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
